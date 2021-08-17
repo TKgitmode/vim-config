@@ -20,14 +20,6 @@ nmap <BS> 3<S-g><cr>
 " Mode emmet and htmldjango
 " nnoremap <C-m> ChangeMode()
 
-function! ChangeMode()
-  if (coc_filetype_map == {'htmldjango':'html'})
-    let g:coc_filetype_map = {'html':'htmldjango'}
-  else
-    let g:coc_filetype_map = {'htmldjango':'hmtl'}
-  endif
-endfunction
-
 " Get off my lawn
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
@@ -35,8 +27,8 @@ nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
 " split resize
-nnoremap <Leader>> 10<C-w>>
-nnoremap <Leader>< 10<C-w><
+nnoremap <Leader>, 10<C-w>>
+nnoremap <Leader>. 10<C-w><
 
 " quick semi
 nnoremap <Leader>; $a;<Esc>

@@ -35,7 +35,14 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-set tabstop=2
+set shiftwidth=3
+set tabstop=3
+set softtabstop=3
+set noexpandtab
+set autoindent
+set smartindent
+au BufNewFile,BufRead *.py set shiftwidth=3
+
 if has('python')
 	set pyx=2
 elseif has('python3')
