@@ -28,6 +28,8 @@ let g:gruvbox_italic=1
 
 let g:user_emmet_install_global = 0
 au BufNewFile,BufRead *.html set filetype=htmldjango
+autocmd BufEnter NERD_tree_* | execute 'normal R'
+au BufEnter NERD_tree_* | set shiftwidth=2
 
 "" Searching
 set hlsearch                    " highlight matches
