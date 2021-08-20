@@ -37,6 +37,9 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
+set path+=**
+set wildmenu
+
 set shiftwidth=3
 set tabstop=3
 set softtabstop=3
